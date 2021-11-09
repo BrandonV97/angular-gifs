@@ -1,0 +1,38 @@
+<div class="sidebar">
+  <div class="logo_content">
+    <div class="logo">
+      <i class='bx bxl-c-plus-plus'></i>
+      <div class="logo_name"> First CSS Code </div>
+    </div>
+    <i class='bx bx-menu' id="btn" (click)="activar()"></i>
+  </div>
+  
+  <!-- Nav List -->
+  <ul class="nav-list">
+    
+    <li *ngFor="let item of historial " (click)="buscar(item)">
+      <a href="#">
+        <i class='bx bx-message-dots'></i>
+        <span class="links_name">{{item | titlecase}}</span>
+      </a>
+      <span class="tooltip">{{item | titlecase}}</span>
+    </li>
+
+  </ul>
+
+
+  <!-- Profile content -->
+  <div class="profile_content">
+    <div class="profile">
+      <div class="profile_details">
+        <img src="Logo.jpg" alt="">
+        <div class="name_job">
+          <div class="name">Brandon Vasquez</div>
+          <div class="job">Ing Sofware</div>
+        </div>
+      </div>
+      <i class='bx bx-log-out' id="log_out"></i>
+    </div>
+  </div>
+</div>
+

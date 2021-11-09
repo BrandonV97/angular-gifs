@@ -1,0 +1,12 @@
+h5{
+    color: white;
+    font-size: 2rem;
+}
+
+.search{
+    border-radius: 12px;
+    width: 90%;
+    height: 2.75rem;
+    background: rgb(237, 238, 247);
+    border: none;
+}

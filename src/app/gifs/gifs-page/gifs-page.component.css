@@ -1,0 +1,14 @@
+
+.content_gifs{
+    position: relative;
+    width: 100%;
+    left: 0px;
+    transition: all 0.5s ease;
+}
+
+.content_gifs.active{
+    width: calc(100% - 170px);
+    left: 170px;
+    
+}
+

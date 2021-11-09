@@ -1,0 +1,42 @@
+
+.grid{
+    display:grid;
+}
+
+.card_container{
+    z-index: 100;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+.card_content{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: rgba(97,102,179,30%);
+    border-radius: 1.5rem 0rem 1.5rem 0rem;
+    text-align: center;
+    
+   
+}
+
+.card_img{
+    position: relative;
+    align-items: center;
+    top: 8px;
+    width: 320px;
+    height: 300px;
+    transition: .3s;
+}
+
+.card_title{
+    padding-top: 8px;
+    display: block;
+    color: cornsilk;
+    font-size: 1.5rem;
+}
+
+.card_content:hover .card_img{
+    transform: translateY(-.75rem);
+}
